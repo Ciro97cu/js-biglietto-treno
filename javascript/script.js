@@ -12,9 +12,9 @@ if (isNaN(age)) {
 } else {
 
     if (age < 18) {
-        priceTicket = priceTicket - (priceTicket * 0.20);
-    } else if (age >= 65) {
-        priceTicket = priceTicket - (priceTicket * 0.40);
+        priceTicket -= priceTicket * 0.20;
+    } else if (age > 65) {
+        priceTicket -= priceTicket * 0.40;
     }
 
     let priceTicketRounded = priceTicket.toFixed(2) + "€";
@@ -23,7 +23,7 @@ if (isNaN(age)) {
         console.log(`Sei minorenne hai diritto ad un
     20% di socnto, perciò il prezzo finale del tuo biglietto sarà di
     ${priceTicketRounded}`)
-    } else if (age >= 65) {
+    } else if (age > 65) {
         console.log(`Sei over65 hai diritto ad un
     40% di socnto, perciò il prezzo finale del tuo biglietto sarà di
     ${priceTicketRounded}`)
