@@ -34,7 +34,7 @@ if (isNaN(age)) {
     } else if (age > 65) {
         priceTicket -= priceTicket * 0.40;
         priceTicket = priceTicket.toFixed(2);
-        console.log(`Sei over65 hai diritto ad un
+        console.log(`Sei over 65 hai diritto ad un
     40% di sconto, perciò il prezzo finale del tuo biglietto sarà di
     ${priceTicket}€`)
         document.getElementById("customer_price").innerText = `Sei over65 hai diritto ad un 40% di sconto, perciò il prezzo finale del tuo biglietto sarà di ${priceTicket}€`;
