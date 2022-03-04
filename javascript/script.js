@@ -21,7 +21,6 @@ if (isNaN(age)) {
     console.log("Hai dimenticato di compilare un campo o inserito 0");
     document.getElementById("customer_price").innerText = "Hai dimenticato di compilare un campo o inserito 0"
 } else {
-
     /*once checked the format, we can calculate
     the eventual discount and than print the price
     in the console and in the html*/
@@ -29,16 +28,16 @@ if (isNaN(age)) {
         priceTicket -= priceTicket * 0.20;
         priceTicket = priceTicket.toFixed(2);
         console.log(`Sei minorenne hai diritto ad un
-    20% di socnto, perciò il prezzo finale del tuo biglietto sarà di
+    20% di sconto, perciò il prezzo finale del tuo biglietto sarà di
     ${priceTicket}€`)
-        document.getElementById("customer_price").innerText = `Sei minorenne hai diritto ad un 20% di socnto, perciò il prezzo finale del tuo biglietto sarà di ${priceTicket}€`;
+        document.getElementById("customer_price").innerText = `Sei minorenne hai diritto ad un 20% di sconto, perciò il prezzo finale del tuo biglietto sarà di ${priceTicket}€`;
     } else if (age > 65) {
         priceTicket -= priceTicket * 0.40;
         priceTicket = priceTicket.toFixed(2);
         console.log(`Sei over65 hai diritto ad un
-    40% di socnto, perciò il prezzo finale del tuo biglietto sarà di
+    40% di sconto, perciò il prezzo finale del tuo biglietto sarà di
     ${priceTicket}€`)
-        document.getElementById("customer_price").innerText = `Sei over65 hai diritto ad un 40% di socnto, perciò il prezzo finale del tuo biglietto sarà di ${priceTicket}€`;
+        document.getElementById("customer_price").innerText = `Sei over65 hai diritto ad un 40% di sconto, perciò il prezzo finale del tuo biglietto sarà di ${priceTicket}€`;
     } else {
         priceTicket = priceTicket.toFixed(2);
         console.log(`Il prezzo del tuo biglietto
@@ -46,4 +45,3 @@ if (isNaN(age)) {
         document.getElementById("customer_price").innerText = `Il prezzo del tuo biglietto è di: ${priceTicket}€`;
     }
 }
-

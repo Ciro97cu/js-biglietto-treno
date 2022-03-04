@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     row-gap: 20px;
+    outline: 5px solid antiquewhite;
 }
 
 .container > * {
@@ -22,4 +23,12 @@
 .container .age > p,
 #customer_price {
     font-weight: 500;
+}
+
+.icon {
+    background-color: rgb(101, 13, 13);
+}
+
+i {
+    color: antiquewhite;
 }
