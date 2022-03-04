@@ -1,3 +1,8 @@
+// introductive alert
+alert(`Welcome on board!!! 
+Rispondi alle domande per conoscere 
+il prezzo del tuo biglietto`);
+
 // constant kilometers to do
 const kmToDo = prompt("Quanti kilometri vuoi percorrere?", "Es. 10");
 // constant age passenger
@@ -13,23 +18,23 @@ if (isNaN(age)) {
 
     if (age < 18) {
         priceTicket -= priceTicket * 0.20;
+        priceTicket = priceTicket.toFixed(2);
     } else if (age > 65) {
         priceTicket -= priceTicket * 0.40;
+        priceTicket = priceTicket.toFixed(2);
     }
-
-    let priceTicketRounded = priceTicket.toFixed(2) + "€";
 
     if (age < 18) {
         console.log(`Sei minorenne hai diritto ad un
     20% di socnto, perciò il prezzo finale del tuo biglietto sarà di
-    ${priceTicketRounded}`)
+    ${priceTicket}€`)
     } else if (age > 65) {
         console.log(`Sei over65 hai diritto ad un
     40% di socnto, perciò il prezzo finale del tuo biglietto sarà di
-    ${priceTicketRounded}`)
+    ${priceTicket}€`)
     } else {
         console.log(`Il prezzo del tuo biglietto
-    è di: ${priceTicketRounded}`)
+    è di: ${priceTicket}€`)
     }
 }
 
