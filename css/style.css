@@ -1,6 +1,7 @@
 .container {
     margin: 5vh auto;
     width: 20vw;
+    min-width: 300px;
     padding: 20px 0;
     border-radius: 20px;
     background-color: rgb(101, 13, 13);
