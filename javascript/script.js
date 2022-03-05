@@ -8,8 +8,8 @@ const age = prompt("Quanti anni hai?", "Es. 25");
 const kmToDo = prompt("Quanti kilometri vuoi percorrere?", "Es. 10");
 
 // age and km in the html
-document.getElementById("your_age").innerText = `${age}anni`;
-document.getElementById("your_km").innerText = `${kmToDo}Km`;
+document.getElementById("your_age").innerText = `${age} anni`;
+document.getElementById("your_km").innerText = `${kmToDo} Km`;
 
 // ticket price depending on the kilometers
 let priceTicket = (kmToDo * 0.21).toFixed(2);
